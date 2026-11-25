@@ -35,6 +35,9 @@ typedef struct SDL_VideoData SDL_VideoData;
 typedef struct SDL_DisplayData SDL_DisplayData;
 typedef struct SDL_WindowData SDL_WindowData;
 
+#pragma incomplete SDL_VideoData
+#pragma incomplete SDL_VideoDevice
+
 typedef struct
 {
     float SDR_white_level;
@@ -567,6 +570,7 @@ extern VideoBootStrap OFFSCREEN_bootstrap;
 extern VideoBootStrap QNX_bootstrap;
 extern VideoBootStrap OPENVR_bootstrap;
 extern VideoBootStrap DOSVESA_bootstrap;
+extern VideoBootStrap PLAN9_bootstrap;
 
 extern bool SDL_UninitializedVideo(void);
 // Use SDL_OnVideoThread() sparingly, to avoid regressions in use cases that currently happen to work

@@ -147,6 +147,8 @@ typedef enum SDL_RendererLogicalPresentation
  */
 typedef struct SDL_Renderer SDL_Renderer;
 
+#pragma incomplete SDL_Renderer
+
 #ifndef SDL_INTERNAL
 
 /**
@@ -171,6 +173,7 @@ struct SDL_Texture
 
 typedef struct SDL_Texture SDL_Texture;
 
+#pragma incomplete SDL_Texture
 
 /* Function prototypes */
 

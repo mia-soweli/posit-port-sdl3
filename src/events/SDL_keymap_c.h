@@ -25,6 +25,8 @@
 
 typedef struct SDL_Keymap SDL_Keymap;
 
+#pragma incomplete SDL_Keymap
+
 #define SDL_KEYMAP_AUTO_RELEASE      0x01
 #define SDL_KEYMAP_LAYOUT_DETERMINED 0x02
 #define SDL_KEYMAP_FRENCH_NUMBERS    0x04
